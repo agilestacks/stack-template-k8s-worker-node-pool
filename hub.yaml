@@ -1,0 +1,20 @@
+---
+version: 1
+kind: stack
+meta:
+  name: k8s-worker-node-pool:1
+  brief: Stack to provisions pool of Kubernetes worker nodes
+
+requires:
+  - aws
+  - kubernetes
+
+components:
+- name: k8s-worker-nodes
+  source:
+    dir: components/k8s-worker-nodes
+
+lifecycle:
+  verbs: [deploy, undeploy]
+  order:
+    - k8s-worker-nodes

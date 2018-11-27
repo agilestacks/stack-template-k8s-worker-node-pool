@@ -1,0 +1,13 @@
+---
+parameters:
+- name: cloud.kind
+  value: aws
+- name: terraform.bucket
+  kind: user
+  parameters:
+  - name: name
+    default: terraform.agilestacks.com
+    fromEnv: STATE_BUCKET
+  - name: region
+    default: us-east-1
+    fromEnv: STATE_REGION

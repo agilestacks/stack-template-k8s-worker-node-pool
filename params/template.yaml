@@ -11,8 +11,6 @@ parameters:
     parameters:
     - name: size
     - name: spotPrice
-    - name: containerLinuxVersion
     - name: poolName
-    - name: asgTags
     - name: asgMaxSize
     - name: asgMinSize

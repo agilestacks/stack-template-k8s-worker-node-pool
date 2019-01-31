@@ -9,7 +9,10 @@ parameters:
   - name: cloud.vpc.worker.sg.id
   - name: component.k8s-worker-nodes
     parameters:
-    - name: count
     - name: size
     - name: spotPrice
+    - name: containerLinuxVersion
     - name: poolName
+    - name: asgTags
+    - name: asgMaxSize
+    - name: asgMinSize

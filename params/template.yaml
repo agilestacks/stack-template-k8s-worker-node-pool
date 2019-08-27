@@ -8,9 +8,13 @@ parameters:
   - name: cloud.vpc.worker.subnet.ids
   - name: cloud.vpc.worker.sg.id
   - name: cloud.iam.worker.instanceProfile
+  - name: cloud.ec2.master.ignitionProfileS3
+    empty: allow
   - name: component.k8s-worker-nodes
     parameters:
     - name: count
     - name: size
     - name: spotPrice
     - name: shortName
+    - name: vmType
+      value: hvm

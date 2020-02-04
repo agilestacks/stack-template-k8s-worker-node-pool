@@ -10,11 +10,11 @@ requires:
   - kubernetes
 
 components:
-- name: k8s-worker-nodes
+- name: k8s-mixed-worker-nodes
   source:
-    dir: components/k8s-worker-nodes
+    dir: components/k8s-mixed-worker-nodes
 
 lifecycle:
   verbs: [deploy, undeploy]
   order:
-    - k8s-worker-nodes
+    - k8s-mixed-worker-nodes

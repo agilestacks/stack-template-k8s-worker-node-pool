@@ -10,11 +10,15 @@ parameters:
   - name: cloud.iam.worker.instanceProfile
   - name: cloud.ec2.master.ignitionProfileS3
     empty: allow
-  - name: component.k8s-worker-nodes
+  - name: component.k8s-mixed-worker-nodes
     parameters:
+    - name: instance.list
+    - name: allocation.strategy
+    - name: onDemandInstance.count
+    - name: autoscale.enabled
     - name: count
-    - name: size
-    - name: spotPrice
+    - name: maxCount
+    - name: volume.size
     - name: shortName
     - name: vmType
       value: hvm

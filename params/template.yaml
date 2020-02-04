@@ -18,6 +18,7 @@ parameters:
     - name: autoscale.enabled
     - name: count
     - name: maxCount
+      empty: allow
     - name: volume.size
     - name: shortName
     - name: vmType

@@ -17,6 +17,7 @@ parameters:
     - name: onDemandInstance.count
     - name: autoscale.enabled
     - name: count
+    - name: maxCount
     - name: volume.size
     - name: shortName
     - name: vmType

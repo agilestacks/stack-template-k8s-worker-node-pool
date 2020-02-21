@@ -17,9 +17,9 @@ parameters:
     - name: count
     - name: volume.size
     - name: shortName
-  - name: component.k8s-mixed-worker-nodes
+  - name: component.worker-pool.mixed
     parameters:
-    - name: allocation.strategy
+    - name: allocationStrategy
     - name: onDemandInstance.count
     - name: vmType
       value: hvm

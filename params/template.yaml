@@ -13,11 +13,4 @@ parameters:
   - name: component.worker-pool
     parameters:
     - name: instance.size
-    - name: autoscaling.enabled
     - name: count
-    - name: volume.size
-    - name: shortName
-    - name: mixed.allocationStrategy
-    - name: mixed.onDemandInstance.count
-    - name: mixed.vmType
-      value: hvm

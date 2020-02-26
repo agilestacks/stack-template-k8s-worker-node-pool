@@ -12,5 +12,6 @@ parameters:
     empty: allow
   - name: component.worker-pool
     parameters:
+    - name: shortName
     - name: instance.size
     - name: count
